@@ -40,4 +40,4 @@ app.use("/files", express.static(path.resolve(__dirname, "..", "tmp")));
 //importando o arquivo routes.js
 app.use(require("./routes"));
 
-server.listen(1993);
+server.listen(process.env.PORT || 1993);
